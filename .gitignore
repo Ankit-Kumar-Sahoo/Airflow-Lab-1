@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# Virtual environment
+.venv/
+
+# Airflow model output
+dags/model/
+
+# Working data
+working_data/
+
+# Environment variables
+.env
+
+# uv
+uv.lock
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store

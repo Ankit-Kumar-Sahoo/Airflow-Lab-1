@@ -1,0 +1,41 @@
+[2026-02-27T21:41:11.412+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-02-27T21:41:11.420+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Airflow_Lab1.task_build_save_model manual__2026-02-27T21:41:07.265187+00:00 [queued]>
+[2026-02-27T21:41:11.422+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Airflow_Lab1.task_build_save_model manual__2026-02-27T21:41:07.265187+00:00 [queued]>
+[2026-02-27T21:41:11.422+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-02-27T21:41:11.426+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): task_build_save_model> on 2026-02-27 21:41:07.265187+00:00
+[2026-02-27T21:41:11.428+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=183) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-02-27T21:41:11.429+0000] {standard_task_runner.py:63} INFO - Started process 195 to run task
+[2026-02-27T21:41:11.429+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'Airflow_Lab1', 'task_build_save_model', 'manual__2026-02-27T21:41:07.265187+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmpujwwn3b1']
+[2026-02-27T21:41:11.430+0000] {standard_task_runner.py:91} INFO - Job 23: Subtask task_build_save_model
+[2026-02-27T21:41:11.444+0000] {task_command.py:426} INFO - Running <TaskInstance: Airflow_Lab1.task_build_save_model manual__2026-02-27T21:41:07.265187+00:00 [running]> on host a53d9f205e5f
+[2026-02-27T21:41:11.480+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ankit Kumar Sahoo' AIRFLOW_CTX_DAG_ID='Airflow_Lab1' AIRFLOW_CTX_TASK_ID='task_build_save_model' AIRFLOW_CTX_EXECUTION_DATE='2026-02-27T21:41:07.265187+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-02-27T21:41:07.265187+00:00'
+[2026-02-27T21:41:11.481+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-02-27T21:41:11.529+0000] {logging_mixin.py:188} INFO - k=1, BIC=-58810.47
+[2026-02-27T21:41:11.633+0000] {logging_mixin.py:188} INFO - k=2, BIC=-77956.46
+[2026-02-27T21:41:11.741+0000] {logging_mixin.py:188} INFO - k=3, BIC=-83697.97
+[2026-02-27T21:41:11.877+0000] {logging_mixin.py:188} INFO - k=4, BIC=-91130.06
+[2026-02-27T21:41:12.039+0000] {logging_mixin.py:188} INFO - k=5, BIC=-92736.50
+[2026-02-27T21:41:12.222+0000] {logging_mixin.py:188} INFO - k=6, BIC=-95066.55
+[2026-02-27T21:41:12.396+0000] {logging_mixin.py:188} INFO - k=7, BIC=-95395.01
+[2026-02-27T21:41:12.598+0000] {logging_mixin.py:188} INFO - k=8, BIC=-99104.22
+[2026-02-27T21:41:12.840+0000] {logging_mixin.py:188} INFO - k=9, BIC=-99884.06
+[2026-02-27T21:41:13.063+0000] {logging_mixin.py:188} INFO - k=10, BIC=-100060.47
+[2026-02-27T21:41:13.431+0000] {logging_mixin.py:188} INFO - k=11, BIC=-101273.56
+[2026-02-27T21:41:13.741+0000] {logging_mixin.py:188} INFO - k=12, BIC=-100808.17
+[2026-02-27T21:41:14.173+0000] {logging_mixin.py:188} INFO - k=13, BIC=-101258.26
+[2026-02-27T21:41:14.769+0000] {logging_mixin.py:188} INFO - k=14, BIC=-102313.10
+[2026-02-27T21:41:15.500+0000] {logging_mixin.py:188} INFO - k=15, BIC=-102386.47
+[2026-02-27T21:41:16.122+0000] {logging_mixin.py:188} INFO - k=16, BIC=-102186.19
+[2026-02-27T21:41:17.403+0000] {logging_mixin.py:188} INFO - k=17, BIC=-103139.92
+[2026-02-27T21:41:18.299+0000] {logging_mixin.py:188} INFO - k=18, BIC=-102934.20
+[2026-02-27T21:41:19.082+0000] {logging_mixin.py:188} INFO - k=19, BIC=-103032.65
+[2026-02-27T21:41:19.606+0000] {logging_mixin.py:188} INFO - k=20, BIC=-102976.06
+[2026-02-27T21:41:19.620+0000] {logging_mixin.py:188} INFO - Models saved to /opt/***/dags/model/model.sav
+[2026-02-27T21:41:19.620+0000] {python.py:237} INFO - Done. Returned value was: [-58810.471717073044, -77956.46024708622, -83697.97282955199, -91130.06255560582, -92736.49978367315, -95066.5504719157, -95395.00762160783, -99104.22273599452, -99884.05766415749, -100060.47036676544, -101273.55973116962, -100808.16520633633, -101258.25759755491, -102313.10315770845, -102386.46670851497, -102186.1918768321, -103139.92304279606, -102934.19599540016, -103032.64869050047, -102976.06386094945]
+[2026-02-27T21:41:19.626+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-02-27T21:41:19.655+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=Airflow_Lab1, task_id=task_build_save_model, run_id=manual__2026-02-27T21:41:07.265187+00:00, execution_date=20260227T214107, start_date=20260227T214111, end_date=20260227T214119
+[2026-02-27T21:41:19.691+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-02-27T21:41:19.698+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2026-02-27T21:41:19.698+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
