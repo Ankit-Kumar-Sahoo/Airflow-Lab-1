@@ -202,28 +202,6 @@ docker compose up -d
 
 ---
 
-## Viewing Results
-
-Navigate to: **DAG → Graph → task_load_model_elbow → Logs**
-
-```
-INFO - k=1, BIC=XXXX
-INFO - k=2, BIC=XXXX
-...
-INFO - Optimal no. of clusters (BIC elbow): X
-INFO - Predicted cluster for test sample: X
-```
-
----
-
-## Updating the Pipeline
-
-Since `dags/` is mounted as a Docker volume, any changes to `lab.py` or `airflow.py` are **instantly reflected** inside the container — no restart needed. Just:
-
-1. Edit `dags/src/lab.py` locally
-2. Trigger the DAG again in the UI
-
----
 
 ## Stopping Airflow
 
