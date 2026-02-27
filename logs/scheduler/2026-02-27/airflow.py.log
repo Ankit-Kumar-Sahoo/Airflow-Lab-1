@@ -3698,3 +3698,17 @@
 [2026-02-27T21:17:20.962+0000] {logging_mixin.py:188} INFO - [2026-02-27T21:17:20.962+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-02-27T21:17:20.966+0000] {logging_mixin.py:188} INFO - [2026-02-27T21:17:20.966+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab1 to None, run_after=None
 [2026-02-27T21:17:20.971+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow.py took 0.675 seconds
+[2026-02-27T21:17:51.015+0000] {processor.py:161} INFO - Started process (PID=3646) to work on /opt/airflow/dags/airflow.py
+[2026-02-27T21:17:51.016+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-27T21:17:51.018+0000] {logging_mixin.py:188} INFO - [2026-02-27T21:17:51.018+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-27T21:17:51.556+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab1' retrieved from /opt/airflow/dags/airflow.py
+[2026-02-27T21:17:51.565+0000] {logging_mixin.py:188} INFO - [2026-02-27T21:17:51.565+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-27T21:17:51.569+0000] {logging_mixin.py:188} INFO - [2026-02-27T21:17:51.568+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab1 to None, run_after=None
+[2026-02-27T21:17:51.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow.py took 0.566 seconds
+[2026-02-27T21:18:21.772+0000] {processor.py:161} INFO - Started process (PID=3664) to work on /opt/airflow/dags/airflow.py
+[2026-02-27T21:18:21.773+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2026-02-27T21:18:21.779+0000] {logging_mixin.py:188} INFO - [2026-02-27T21:18:21.778+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2026-02-27T21:18:22.432+0000] {processor.py:840} INFO - DAG(s) 'Airflow_Lab1' retrieved from /opt/airflow/dags/airflow.py
+[2026-02-27T21:18:22.443+0000] {logging_mixin.py:188} INFO - [2026-02-27T21:18:22.442+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-02-27T21:18:22.447+0000] {logging_mixin.py:188} INFO - [2026-02-27T21:18:22.446+0000] {dag.py:3954} INFO - Setting next_dagrun for Airflow_Lab1 to None, run_after=None
+[2026-02-27T21:18:22.452+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/airflow.py took 0.687 seconds
